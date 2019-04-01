@@ -1,14 +1,16 @@
-## Backend Developer
-Reto Tech - Intercorp Retail
+# Backend Developer
 
-```
--Microservicio desarrollado en Java Spring boot
+_Reto Tech - Intercorp Retail_
 
--API Rest documentada en Swagger
-    http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/swagger-ui.html
-    http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/v2/api-docs
+## Microservicio desarrollado en Java Spring boot
 
--Deployado en AWS(EC2 - RDS Mysql) Github: https://github.com/alexjosue/cliente-service
+### API Rest documentada en Swagger
+* [Link Swagger-ui](http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/swagger-ui.html)
+* [Link Api-docs](http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/v2/api-docs)
+
+	
+### Deployado en AWS(EC2 - RDS Mysql)
+	```
     CREATE TABLE `db_corp`.`cliente` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `nombre` VARCHAR(60) NOT NULL,
@@ -17,19 +19,21 @@ Reto Tech - Intercorp Retail
     `fechanacimiento` DATETIME NOT NULL,
     PRIMARY KEY (`id`));
     insert into db_corp.cliente values(null, 'ALEX','FERNANDEZ',31,'1987-11-15');
-
--Endpoint de Entrada POST /creacliente:
-    http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/creacliente
+	```
+	
+### Endpoint de Entrada POST /creacliente:
+* http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/creacliente
+	```
     {
       "apellido": "Gonzales",
       "edad": 19,
       "fechaNacimiento": "2000-03-20",
       "nombre": "Juan"
     }
+	```
 
--Endpoint de Salida GET /kpideclientes:
-    http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/kpideclientes
+### Endpoint de Salida GET /kpideclientes:
+* [Link /kpideclientes](http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/kpideclientes)
 
--Endpoint de Salida GET /listclientes:
-    http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/listclientes
-```
+### Endpoint de Salida GET /listclientes:
+* [Link /listclientes](http://ec2-52-47-189-57.eu-west-3.compute.amazonaws.com:8081/listclientes)
